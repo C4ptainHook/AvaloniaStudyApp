@@ -3,7 +3,30 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		Height="450" Width="800" MinWidth="400"
         x:Class="FirstAvaApp.MainWindow"
         Title="FirstAvaApp">
-    Welcome to Avalonia!
+	    <StackPanel> 
+			<!-- Title bar-->
+			<Grid Height="40" Background="Orange" ColumnDefinitions="Auto, Auto, *, Auto, Auto"> 
+				<Rectangle Grid.Column="0" Width="40" Fill="Red"/>
+				<Rectangle Grid.Column="1" Width="40" Fill="Beige"/>
+				<StackPanel Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+					<Label FontWeight="Bold">AVALONIA</Label>
+					<Label>Loudness meter</Label>
+				</StackPanel>
+				<Rectangle Grid.Column="3" Width="40" Fill="Violet"/>
+				<Rectangle Grid.Column="4" Width="40" Fill="Green"/>
+			</Grid>
+			
+			<!-- Main area-->
+			<Grid>
+
+			</Grid>
+			
+			<!--Bottom bar-->
+			<Grid>
+
+			</Grid>
+		</StackPanel>
 </Window>
